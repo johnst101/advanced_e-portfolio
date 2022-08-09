@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@300;400;700;900&display=swap");
 
 * {
-  font-family: 'Rokkitt', serif;
+  font-family: "Rokkitt", serif;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;;
+  box-sizing: border-box;
 }
 
 li {
@@ -12,14 +12,15 @@ li {
 }
 
 section {
-  background-color: #F5F5F6;
+  background-color: #f5f5f6;
+  transition: all 300ms ease;
 }
 
 .title {
   font-size: 120px;
   margin-bottom: 12px;
   text-align: left;
-  line-height: .90;
+  line-height: 0.9;
 }
 
 .secondary {
@@ -75,16 +76,16 @@ button {
   height: 3px;
   width: 0;
   right: 0;
-  background-color: #1F2122;
+  background-color: #1f2122;
   transition: all 300ms ease;
 }
 
 .link__hover-effect--white::after {
-  background-color: white;  
+  background-color: white;
 }
 
 .link__hover-effect--black::after {
-  background-color: #1F2122;
+  background-color: #1f2122;
 }
 
 .link__hover-effect:hover::after {
@@ -92,9 +93,10 @@ button {
   width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
-  background-color: #1F2122;
+  background-color: #1f2122;
   color: white;
   outline: none;
   border: 3px solid #c0c4cc;
@@ -111,11 +113,13 @@ textarea {
   margin-top: 12px;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #5da2d5;
 }
 
@@ -140,8 +144,31 @@ nav,
   transition: all 400ms;
 }
 
-.dark-theme {
-/* ended at 2:24:59 */
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-circle-half-stroke,
+.dark-theme .header__para {
+  color: white;
+}
+
+.dark-theme section {
+  background-color: #1f2122;
+}
+
+.dark-theme .scroll__icon {
+  border-color: white;
+}
+
+.dark-theme .scroll__icon::after,
+.dark-theme .link__hover-effect--black::after {
+  background-color: white;
+}
+
+.dark-theme .mail__btn {
+  background-color: white;
+  color:#1f2122;
 }
 
 /* LANDING PAGE */
@@ -191,7 +218,7 @@ nav,
   font-size: 32px;
   border-radius: 50%;
   border: none;
-  background-color: #1F2122;
+  background-color: #1f2122;
   color: white;
   position: absolute;
   bottom: 32px;
@@ -211,7 +238,7 @@ nav,
 .scroll__icon {
   width: 20px;
   height: 30px;
-  border: 2px solid #1F2122;
+  border: 2px solid #1f2122;
   border-radius: 24px;
   display: flex;
   align-items: center;
@@ -222,7 +249,7 @@ nav,
   content: "";
   width: 4px;
   height: 6px;
-  background-color: #1F2122;
+  background-color: #1f2122;
   border-radius: 2px;
   animation: scroll 1000ms infinite alternate-reverse;
 }
@@ -269,7 +296,7 @@ nav {
 
 .nav__link--anchor {
   font-size: 16px;
-  color: #1F2122;
+  color: #1f2122;
   font-weight: 700;
 }
 
@@ -317,7 +344,7 @@ nav {
 }
 
 .modal__about {
-  background-color: #F5F5F6;
+  background-color: #f5f5f6;
   transform: translateX(-110%);
 }
 
@@ -357,7 +384,7 @@ nav {
 }
 
 .modal__contact {
-  background-color: #1F2122;
+  background-color: #1f2122;
   color: white;
   transform: translateX(110%);
 }
@@ -414,7 +441,7 @@ nav {
 }
 
 .modal__overlay--loading {
-  background-color: #1F2122;
+  background-color: #1f2122;
   font-size: 80px;
   z-index: -1;
 }
@@ -507,7 +534,7 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1F2122;
+  background-color: #1f2122;
   opacity: 0;
   transition: opacity 300ms ease;
 }
@@ -533,7 +560,7 @@ nav {
 /* FOOTER */
 
 footer {
-  background-color: #1F2122;
+  background-color: #1f2122;
 }
 
 .footer__row {
@@ -561,4 +588,47 @@ footer {
 .footer__social--link,
 .footer__copyright {
   color: white;
+}
+
+/* SHAPES */
+
+.shape {
+  position: fixed;
+}
+
+.shape--0 {
+  top: 35vh;
+  left: 5vw;
+}
+.shape--1 {
+  top: 35vh;
+  left: 50vw;
+}
+.shape--2 {
+  top: 35vh;
+  left: 80vw;
+}
+.shape--3 {
+  top: 70vh;
+  left: 5vw;
+}
+.shape--4 {
+  top: 70vh;
+  left: 50vw;
+}
+.shape--5 {
+  top: 70vh;
+  left: 80vw;
+}
+.shape--6 {
+  top: 95vh;
+  left: 5vw;
+}
+.shape--7 {
+  top: 95vh;
+  left: 50vw;
+}
+.shape--8 {
+  top: 95vh;
+  left: 80vw;
 }
