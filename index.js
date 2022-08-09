@@ -1,11 +1,15 @@
-/* <script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("YOUR_PUBLIC_KEY");
-   })();
-</script> */
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+  contrastToggle = !contrastToggle;
+  if  (contrastToggle) {
+    document.body.classList += " dark-theme"
+  }
+  else {
+    document.body.classList.remove("dark-theme")
+  }
+}
 
 function contact() {
   event.preventDefault();
@@ -29,7 +33,6 @@ function contact() {
     });
   }
 
-  let isModalOpen = false;
   function toggleModal() {
     if (isModalOpen) {
       isModalOpen = false;
